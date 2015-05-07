@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CarDHTML</title>
+
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/cardhtml.css">
+	<script src="../scripts/jquery-2.1.4.min.js"></script>
+	<script src="../scripts/html2canvas.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div id="target-elem"></div>
+		<input type="file" id="saveFile" nwsaveas="my_business_card.png" style="display:none;">
+		<div class="app-view" id="home">
+			<p><b>Notice:</b> You need to create the card's sides separately.</p>
+			<hr>
+			<p>Begin by selecting your HTML file to render.</p>
+			<form>
+				<div class="form-group">
+					<input type="file" accept=".html,.htm,.xhtml,.xhtm" id="chosenFile" class="form-control">
+					<p class="help-block">If you do not choose a file, a demonstration one will be used instead.</p>
+				</div>
+			</form>
+			<button href="chooseSize" type="button" class="btn btn-primary local-link">Next step</button>
+		</div>
+		<div class="app-view" id="chooseSize">
+			<p>Input the desired card dimensions in millimetres.</p>
+			<form>
+				<div class="form-group">
+					<input type="text" id="width" class="form-control" placeholder="Width">
+				</div>
+				<div class="form-group">
+					<input type="text" id="height" class="form-control" placeholder="Height">
+				</div>
+				<div class="form-group">
+					<p>Alternatively you can choose a country to use their standard size.</p>
+					<select id="chosenSize">
+						<option selected="selected">Choose a country...</option>
+						<option value="90 50">Argentina</option>
+						<option value="90 55">Australia</option>
+						<option value="85 55">Austria</option>
+						<option value="85 55">Belgium</option>
+						<option value="90 50">Bosnia and Herzegovina</option>
+						<option value="90 50">Brazil</option>
+						<option value="90 50">Bulgaria</option>
+						<option value="88.9 50.8">Canada</option>
+						<option value="90 54">China</option>
+						<option value="90 55">Colombia</option>
+						<option value="90 50">Costa Rica</option>
+						<option value="90 50">Croatia</option>
+						<option value="90 50">Czech Republic</option>
+						<option value="90 55">Denmark</option>
+						<option value="90 50">Estonia</option>
+						<option value="90 50">Finland</option>
+						<option value="85 55">France</option>
+						<option value="85 55">Germany</option>
+						<option value="90 54">Hong Kong</option>
+						<option value="90 50">Hungary</option>
+						<option value="90 50">India</option>
+						<option value="85 48">Iran</option>
+						<option value="85 55">Ireland</option>
+						<option value="90 50">Israel</option>
+						<option value="85 55">Italy</option>
+						<option value="91 55">Japan</option>
+						<option value="90 50">Kazakhstan</option>
+						<option value="90 50">Latvia</option>
+						<option value="90 50">Lithuania</option>
+						<option value="90 54">Malaysia</option>
+						<option value="90 50">Mexico</option>
+						<option value="90 50">Montenegro</option>
+						<option value="85 55">Netherlands</option>
+						<option value="90 55">New Zealand</option>
+						<option value="90 55">Norway</option>
+						<option value="90 50">Poland</option>
+						<option value="85 55">Portugal</option>
+						<option value="90 50">Romania</option>
+						<option value="90 50">Russia</option>
+						<option value="90 50">Serbia</option>
+						<option value="90 54">Singapore</option>
+						<option value="90 50">Slovakia</option>
+						<option value="85 55">Slovenia</option>
+						<option value="90 50">South Africa</option>
+						<option value="90 50">South Korea</option>
+						<option value="85 55">Spain</option>
+						<option value="90 50">Sri Lanka</option>
+						<option value="90 55">Sweden</option>
+						<option value="85 55">Switzerland</option>
+						<option value="90 55">Taiwan</option>
+						<option value="85 55">Turkey</option>
+						<option value="90 50">Ukraine</option>
+						<option value="85 55">United Kingdom</option>
+						<option value="88.9 50.8">United States</option>
+						<option value="90 50">Uzbekistan</option>
+						<option value="90 55">Vietnam</option>
+					</select>
+				</div>
+			</form>
+			
+			<button href="home" type="button" class="btn btn-default local-link">I made a mistake. Take me back!</button>
+			<button id="btn-build" href="build" type="button" class="btn btn-success local-link">Make my card already!</button>
+		</div>
+		<div class="app-view" id="build">
+			<h2>Building...</h2>
+			<button href="home" type="button" class="btn btn-default local-link" style="display:none;">Back to the start</button>
+		</div>
+	</div>
+	<script src="../scripts/bootstrap.min.js"></script>
+	<script src="../scripts/cardhtml.js"></script>
+</body>
+</html>

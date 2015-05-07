@@ -1,0 +1,40 @@
+@font-face {
+	font-family: Anonymous Pro;
+	src: url("../fonts/AnonymousPro/Anonymous Pro.ttf");
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: "Anonymous Pro", Anonymous, sans-serif;
+	color: #ECF0F1;
+	background-image: url("../img/carbon.png");
+	background-repeat: repeat;
+}
+
+.container {
+	height: 100%;
+	min-height: 150px;
+	position: relative;
+}
+.center {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.center:before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+.centered {
+	width: 90%;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: right;
+}

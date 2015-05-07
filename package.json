@@ -1,0 +1,13 @@
+{
+	"main": "assets/html/index.html",
+	"name": "CardIO",
+	"description": "create business cards with HTML & CSS",
+	"version": "0.1.0",
+	"keywords": ["business card", "business cards", "card", "cards"],
+	"window": {
+		"title": "CardIO",
+		"toolbar": false,
+		"width": 500,
+		"height": 300
+	}
+}
