@@ -14,8 +14,8 @@ While this app is essentially a web page in a webkit browser and it is certainly
 Yes, please. The UI needs some work, so you can start with that if you like!
 
 ## How do I build this thing?
-If you're on Windows, [nodebob](https://github.com/geo8bit/nodebob) is the simplest solution. Clone it, replace the contents of the `app` directory with these files and run the `build.bat`. The ´release´ folder should now contain all the required files to execute the application.
-On other operating systems I recommend you to take a look at the [nw.js website](http://nwjs.io/) and [this guide(https://github.com/nwjs/nw.js/wiki/How-to-package-and-distribute-your-apps).
+If you're on Windows, [nodebob](https://github.com/geo8bit/nodebob) is the simplest solution. Clone it, replace the contents of the `app` directory with these files and run the `build.bat`. The `release` directory should now contain all the required files to execute the application. In my own setup I've updated the nodebob's nw.js version to 0.9.2, but the original 0.8.3 should work too.
+On other operating systems I recommend you to take a look at the [nw.js website](http://nwjs.io/) and [this guide](https://github.com/nwjs/nw.js/wiki/How-to-package-and-distribute-your-apps).
 
 License
 -
